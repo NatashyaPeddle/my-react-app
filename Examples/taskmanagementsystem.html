@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html lnga="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+    <!--Link stylesheet file-->
+    <link rel="stylesheet"href="styles.css">
+</head>
+<body>
+
+<div class="Container">
+<h1>Task Management System</h1>
+<div>
+    <input type="text" id="taskDescription" placeholder="Enter Task task description">
+    <select name="taskStatus" id="taskStatus">
+        <option value="pending">Pending</option>
+        <option value="completed">Completed</option>
+        <option value="high-priority">High Priority</option>
+    </select>
+
+    <button onclick="AddTask()">Add Task</button>
+</div>
+<div id="task-list"> </div>
+    <button onclick="removeCompletedTasks()">Remove Completed Task</button>
+
+
+</div>
+
+
+<!--Link external javascript-->
+ <script src="tms-script.js"></script>
+</body>
+</html>
